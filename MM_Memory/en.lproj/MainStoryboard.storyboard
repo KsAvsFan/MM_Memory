@@ -133,7 +133,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LIf-Nq-QHu">
-                                <rect key="frame" x="10" y="377" width="93" height="112"/>
+                                <rect key="frame" x="10" y="293" width="93" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="Mobile Makers Academy Official1_93x93.png">
@@ -237,6 +237,10 @@
                                     <action selector="changeMe:" destination="2" eventType="touchUpInside" id="dbg-6R-gDP"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="panerai1_93_112.png" id="Ztx-EV-ifT">
+                                <rect key="frame" x="13" y="377" width="93" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -291,33 +295,8 @@
     </scenes>
     <resources>
         <image name="Mobile Makers Academy Official1_93x93.png" width="93" height="93"/>
+        <image name="panerai1_93_112.png" width="93" height="112"/>
     </resources>
-    <classes>
-        <class className="MMFlipsideViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMFlipsideViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-            </relationships>
-        </class>
-        <class className="MMMainViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMMainViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changeMe:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="FourOneCard" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="FourThreeCard" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="FourTwoCard" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="oneOneCard" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="oneThreeCard" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="oneTwoCard" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="threeOneCard" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="threeThreeCard" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="threeTwoCard" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="twoOneCard" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="twoThreeCard" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="twoTwoCard" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -69,12 +69,12 @@
     if (button.selected == NO)
     {
         [button setSelected:YES];
-        [button setImage:[UIImage imageNamed:@"flavor-flav.jpg"] forState:UIControlStateSelected];
+        [button setImage:[UIImage imageNamed:@"flavor-flav.png"] forState:UIControlStateSelected];
     }
     else
     {
         [button setSelected:NO];
-        [button setImage:[UIImage imageNamed:@"Mobile Makers Academy Official1_93x93.pngg"] forState:UIControlStateSelected];
+        [button setImage:[UIImage imageNamed:@"Mobile Makers Academy Official1_93x93.png"] forState:UIControlStateSelected];
     }
 }
 

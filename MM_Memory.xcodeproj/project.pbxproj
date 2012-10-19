@@ -28,6 +28,7 @@
 		1F30D0C0162FC0DB00F05B6C /* PictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F30D0BF162FC0DB00F05B6C /* PictureView.m */; };
 		1F30D0C2162FC36F00F05B6C /* mm_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F30D0C1162FC36F00F05B6C /* mm_logo.png */; };
 		1F30D0D016307E6300F05B6C /* Mobile Makers Academy Official1_93x93.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F30D0CF16307E6300F05B6C /* Mobile Makers Academy Official1_93x93.png */; };
+		1F30D0D2163092DF00F05B6C /* flavor-flav.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F30D0D1163092DF00F05B6C /* flavor-flav.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		1F30D0BF162FC0DB00F05B6C /* PictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureView.m; sourceTree = "<group>"; };
 		1F30D0C1162FC36F00F05B6C /* mm_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mm_logo.png; sourceTree = "<group>"; };
 		1F30D0CF16307E6300F05B6C /* Mobile Makers Academy Official1_93x93.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mobile Makers Academy Official1_93x93.png"; sourceTree = "<group>"; };
+		1F30D0D1163092DF00F05B6C /* flavor-flav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flavor-flav.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		1F30D0B1162FBA5E00F05B6C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1F30D0D1163092DF00F05B6C /* flavor-flav.png */,
 				1F30D0CF16307E6300F05B6C /* Mobile Makers Academy Official1_93x93.png */,
 				1F30D0C1162FC36F00F05B6C /* mm_logo.png */,
 				1F30D0BC162FBF8300F05B6C /* flavor-flav.jpg */,
@@ -214,6 +217,7 @@
 				1F30D0BD162FBF8300F05B6C /* flavor-flav.jpg in Resources */,
 				1F30D0C2162FC36F00F05B6C /* mm_logo.png in Resources */,
 				1F30D0D016307E6300F05B6C /* Mobile Makers Academy Official1_93x93.png in Resources */,
+				1F30D0D2163092DF00F05B6C /* flavor-flav.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

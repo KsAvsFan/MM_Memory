@@ -24,6 +24,7 @@
     IBOutlet    UIButton*    FourOneCard;
     IBOutlet    UIButton*    FourTwoCard;
     IBOutlet    UIButton*    FourThreeCard;
+    IBOutlet    PictureView* testPicture;
 }
 
 
