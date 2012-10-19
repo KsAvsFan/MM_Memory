@@ -15,11 +15,14 @@
 
 static int clicks = 0;
 
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+
+
     }
     return self;
 }
@@ -34,8 +37,8 @@ static int clicks = 0;
 - (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
 //    firstSelected = [[UIImageView alloc] init];
-    NSLog(@"Entering touchesEnded. Clicks = %i", clicks);
-    if (clicks < 2)
+    NSLog(@"Entering touchesEnded. clicks = %i", clicks);
+    if (clicks< 2)
     {
         [self flipCard];
         if (clicks == 0)
@@ -49,6 +52,7 @@ static int clicks = 0;
             }
         clicks++;
     }
+
 }
 
 - (void) checkForMatch

@@ -12,8 +12,6 @@
 {
     PictureView*  firstSelected;
     PictureView*  secondSelected;
-    int        clicks;
-    
 }
 
 @property (nonatomic, retain) NSString *imageName;
