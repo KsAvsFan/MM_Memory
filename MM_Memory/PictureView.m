@@ -10,6 +10,11 @@
 
 @implementation PictureView
 
+@synthesize imageName;
+@synthesize matched;
+
+static int clicks = 0;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -19,46 +24,44 @@
     return self;
 }
 
-- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+- (void) flipCard
 {
-    UITouch* touch = [touches anyObject];
-    CGPoint touchLocation = [ touch locationInView:self.superview];
-    NSLog(@"Touches began x=%f y=%f", touchLocation.x, touchLocation.y);
-    NSLog(@"Self.center x=%f y=%f", self.center.x, self.center.y);
-    
+    [self setHighlighted:YES];
+    [self setUserInteractionEnabled:NO];
 }
 
-- (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
-{
-    UITouch* touch = [touches anyObject];
-    CGPoint touchLocation = [ touch locationInView:self.superview];
-    NSLog(@"Touches ended x=%f y=%f", touchLocation.x, touchLocation.y);
-    NSLog(@"Self.center x=%f y=%f", self.center.x, self.center.y);
-}
 
-- (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
+- (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    UITouch* touch = [touches anyObject];
-    CGPoint touchLocation = [ touch locationInView:self.superview];
-    NSLog(@"Touches moved x=%f y=%f", touchLocation.x, touchLocation.y);
-    NSLog(@"Self.center x=%f y=%f", self.center.x, self.center.y);
-    NSLog(@"self.frame.size.height is: %f", self.frame.size.height);
-    NSLog(@"super.frame.size.height is: %f", self.superview.frame.size.height);
-    
-    if (touchLocation.y < self.frame.size.height/2)
+//    firstSelected = [[UIImageView alloc] init];
+    NSLog(@"Entering touchesEnded. Clicks = %i", clicks);
+    if (clicks < 2)
     {
-        self.center = CGPointMake(self.center.x, self.frame.size.height/2);
+        [self flipCard];
+        if (clicks == 0)
+            {
+                firstSelected = [[PictureView alloc] initWithImage:self.image];
+            }
+        if (clicks==1)
+            {
+                secondSelected = [[PictureView alloc] initWithImage:self.image];
+                [self checkForMatch];
+            }
+        clicks++;
     }
-    else if (touchLocation.y > (self.superview.frame.size.width - (self.frame.size.height/2)))
-    {
-        self.center = CGPointMake(self.center.x, (self.superview.frame.size.width - self.frame.size.height/2));
-    }
-    else {
-        self.center = CGPointMake(self.center.x, touchLocation.y);
-    }
-    
 }
 
+- (void) checkForMatch
+{
+    if (firstSelected.image == secondSelected.image)
+    {
+        NSLog(@"They match");
+        clicks = 0;
+    }
+    // check to see if the two items match
+    // if they match, reset count = 0 and return
+    // if they don't match, reset count = 0 and flip cards back over
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.

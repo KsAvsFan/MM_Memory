@@ -12,36 +12,23 @@
 
 @interface MMMainViewController : UIViewController <MMFlipsideViewControllerDelegate>
 {
-    IBOutlet    UIButton*    oneOneCard;
-    IBOutlet    UIButton*    oneTwoCard;
-    IBOutlet    UIButton*    oneThreeCard;
-    IBOutlet    UIButton*    twoOneCard;
-    IBOutlet    UIButton*    twoTwoCard;
-    IBOutlet    UIButton*    twoThreeCard;
-    IBOutlet    UIButton*    threeOneCard;
-    IBOutlet    UIButton*    threeTwoCard;
-    IBOutlet    UIButton*    threeThreeCard;
-    IBOutlet    UIButton*    FourOneCard;
-    IBOutlet    UIButton*    FourTwoCard;
-    IBOutlet    UIButton*    FourThreeCard;
-    IBOutlet    PictureView* testPicture;
+    IBOutlet    PictureView*    oneOneCard;
+    IBOutlet    PictureView*    oneTwoCard;
+    IBOutlet    PictureView*    oneThreeCard;
+    IBOutlet    PictureView*    twoOneCard;
+    IBOutlet    PictureView*    twoTwoCard;
+    IBOutlet    PictureView*    twoThreeCard;
+    IBOutlet    PictureView*    threeOneCard;
+    IBOutlet    PictureView*    threeTwoCard;
+    IBOutlet    PictureView*    threeThreeCard;
+    IBOutlet    PictureView*    fourOneCard;
+    IBOutlet    PictureView*    fourTwoCard;
+    IBOutlet    PictureView*    fourThreeCard;
+
 }
 
 
--(IBAction)changeMe:(UIButton*)button;
 
-@property (nonatomic, retain) NSString *picOneOneCard;
-@property (nonatomic, retain) NSString *picOneTwoCard;
-@property (nonatomic, retain) NSString *picOneThreeCard;
-@property (nonatomic, retain) NSString *picTwoOneCard;
-@property (nonatomic, retain) NSString *picTwoTwoCard;
-@property (nonatomic, retain) NSString *picTwoThreeCard;
-@property (nonatomic, retain) NSString *picThreeOneCard;
-@property (nonatomic, retain) NSString *picThreeTwoCard;
-@property (nonatomic, retain) NSString *picThreeThreeCard;
-@property (nonatomic, retain) NSString *picFourOneCard;
-@property (nonatomic, retain) NSString *picFourTwoCard;
-@property (nonatomic, retain) NSString *picFourThreeCard;
 
 
 @end

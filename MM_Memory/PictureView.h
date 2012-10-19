@@ -9,10 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface PictureView : UIImageView
+{
+    PictureView*  firstSelected;
+    PictureView*  secondSelected;
+    int        clicks;
+    
+}
 
--(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
--(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
--(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
+@property (nonatomic, retain) NSString *imageName;
+@property (nonatomic, assign, getter=isMatched) BOOL matched;
 
 
 @end

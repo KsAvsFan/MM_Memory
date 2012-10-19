@@ -15,23 +15,13 @@
 
 @implementation MMMainViewController
 
-@synthesize picOneOneCard;
-@synthesize picOneTwoCard;
-@synthesize picOneThreeCard;
-@synthesize picTwoOneCard;
-@synthesize picTwoTwoCard;
-@synthesize picTwoThreeCard;
-@synthesize picThreeOneCard;
-@synthesize picThreeTwoCard;
-@synthesize picThreeThreeCard;
-@synthesize picFourOneCard;
-@synthesize picFourTwoCard;
-@synthesize picFourThreeCard;
+
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setCards];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -41,27 +31,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void) setCards
+{
+    oneOneCard.imageName = @"panerai1_93_112.png";
+    oneTwoCard.imageName = @"panerai2_93_112.png";
+    oneThreeCard.imageName = @"panerai3_93_112.png";
+    twoOneCard.imageName = @"panerai4_93_112.png";
+    twoTwoCard.imageName = @"panerai5_93_112.png";
+    twoThreeCard.imageName = @"flavor-flav.png";
+    threeOneCard.imageName = @"flavor-flav.png";
+    threeTwoCard.imageName = @"panerai5_93_112.png";
+    threeThreeCard.imageName = @"panerai4_93_112.png";
+    fourOneCard.imageName = @"panerai3_93_112.png";
+    fourTwoCard.imageName = @"panerai2_93_112.png";
+    fourThreeCard.imageName = @"panerai1_93_112.png";
+}
+
 - (void) buttonPushed:(id)sender
 {
 	NSLog(@"It works!");
 }
 
-- (void) setCards
-{
-    self.picOneOneCard =  @"panerai1_93_112.png"; //1
-    self.picOneTwoCard =  @"panerai2_93_112"; //2
-    self.picOneThreeCard =  @"panerai3_93_112"; //3
-    self.picTwoOneCard =  @"panerai4_93_112"; //4
-    self.picTwoTwoCard =  @"flavor-flav.png"; //ff
-    self.picTwoThreeCard =  @"panerai5_93_112"; //5
-    self.picThreeOneCard =  @"panerai5_93_112"; //5
-    self.picThreeTwoCard =  @"panerai4_93_112"; //4
-    self.picThreeThreeCard =  @"panerai1_93_112"; //1
-    self.picFourOneCard =  @"panerai2_93_112"; //2
-    self.picFourTwoCard =  @"flavor-flav.png"; //ff
-    self.picFourThreeCard =  @"panerai3_93_112"; //3
-
-}
 
 -(IBAction)changeMe:(UIButton*)button
 {
@@ -76,6 +67,11 @@
         [button setSelected:NO];
         [button setImage:[UIImage imageNamed:@"Mobile Makers Academy Official1_93x93.png"] forState:UIControlStateSelected];
     }
+}
+
+- (void)eachTurn
+{
+    
 }
 
 
