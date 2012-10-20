@@ -13,59 +13,70 @@
 @synthesize imageName;
 @synthesize matched;
 
-static int clicks = 0;
-
+static int numberOfTouches, numberOfMatches, numberOfMisses;
+static PictureView *lastimage;
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-
-
     }
     return self;
 }
 
-- (void) flipCard
+-(void)flipCard
 {
-    [self setHighlighted:YES];
-    [self setUserInteractionEnabled:NO];
-}
-
-
-- (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
-//    firstSelected = [[UIImageView alloc] init];
-    NSLog(@"Entering touchesEnded. clicks = %i", clicks);
-    if (clicks< 2)
+    // [(GameViewController*)self.delegate]; //delegate codes by TJ
+    numberOfTouches++;
+    [self setHighlighted:true];
+    [self setUserInteractionEnabled:false];
+    
+    switch (numberOfTouches)
     {
-        [self flipCard];
-        if (clicks == 0)
-            {
-                firstSelected = [[PictureView alloc] initWithImage:self.image];
+        case 1:
+            lastimage = self;
+            NSLog(@"number of touches is %i", numberOfTouches);
+            break;
+        case 2:
+            NSLog(@"number of touches is %i", numberOfTouches);
+            numberOfTouches = 0;
+            
+            if (lastimage.tag == self.tag) {
+                numberOfMatches++;
+                
+                NSLog(@"number of touches is %i", numberOfTouches);
+                NSLog(@"they match");
             }
-        if (clicks==1)
+            else
             {
-                secondSelected = [[PictureView alloc] initWithImage:self.image];
-                [self checkForMatch];
+                numberOfMisses++;
+                NSLog(@"number of touches is %i", numberOfTouches);
+                NSLog(@"they don't match");
+                [NSTimer scheduledTimerWithTimeInterval:1.0
+                                                 target:self
+                                               selector:@selector(resetTwoCards)
+                                               userInfo:nil
+                                                repeats:NO];
             }
-        clicks++;
+            break;
     }
-
 }
 
-- (void) checkForMatch
+-(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    if (firstSelected.image == secondSelected.image)
-    {
-        NSLog(@"They match");
-        clicks = 0;
-    }
-    // check to see if the two items match
-    // if they match, reset count = 0 and return
-    // if they don't match, reset count = 0 and flip cards back over
+    [self flipCard];
 }
+
+-(void)resetTwoCards
+{
+    [self setHighlighted: false];
+    [self setUserInteractionEnabled:true];
+    [lastimage setHighlighted:false];
+    [lastimage setUserInteractionEnabled:true];
+}
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

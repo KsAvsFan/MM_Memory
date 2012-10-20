@@ -44,6 +44,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onStartPressed:" destination="2" eventType="touchUpInside" id="zCv-o5-ohO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vc5-eC-igd">
                                 <rect key="frame" x="100" y="506" width="66" height="25"/>
@@ -56,52 +59,55 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onStopPressed:" destination="2" eventType="touchUpInside" id="rSE-zI-hbC"/>
+                                </connections>
                             </button>
-                            <imageView contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai3_93_112.png" id="Ztx-EV-ifT" customClass="PictureView">
+                            <imageView tag="3" contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai3_93_112.png" id="Ztx-EV-ifT" customClass="PictureView">
                                 <rect key="frame" x="13" y="377" width="93" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai4_93_112.png" id="3oY-Jn-TEc" customClass="PictureView">
+                            <imageView tag="4" contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai4_93_112.png" id="3oY-Jn-TEc" customClass="PictureView">
                                 <rect key="frame" x="114" y="377" width="93" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai5_93_112.png" id="DUF-SV-N9H" customClass="PictureView">
+                            <imageView tag="5" contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai5_93_112.png" id="DUF-SV-N9H" customClass="PictureView">
                                 <rect key="frame" x="215" y="377" width="93" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai2_93_112.png" id="9wF-Hu-4kE" customClass="PictureView">
+                            <imageView tag="2" contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai2_93_112.png" id="9wF-Hu-4kE" customClass="PictureView">
                                 <rect key="frame" x="215" y="260" width="93" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai1_93_112.png" id="w8q-2t-hRJ" customClass="PictureView">
+                            <imageView tag="1" contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai1_93_112.png" id="w8q-2t-hRJ" customClass="PictureView">
                                 <rect key="frame" x="114" y="260" width="93" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="flavor-flav.png" id="5Vb-Jq-w2s" customClass="PictureView">
+                            <imageView tag="6" contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="flavor-flav.png" id="5Vb-Jq-w2s" customClass="PictureView">
                                 <rect key="frame" x="13" y="260" width="93" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai4_93_112.png" id="6cW-FJ-yeQ" customClass="PictureView">
+                            <imageView tag="4" contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai4_93_112.png" id="6cW-FJ-yeQ" customClass="PictureView">
                                 <rect key="frame" x="13" y="140" width="93" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai5_93_112.png" id="Z6I-QY-Ujx" customClass="PictureView">
+                            <imageView tag="5" contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai5_93_112.png" id="Z6I-QY-Ujx" customClass="PictureView">
                                 <rect key="frame" x="114" y="140" width="93" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="flavor-flav.png" id="dec-6l-83L" customClass="PictureView">
+                            <imageView tag="6" contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="flavor-flav.png" id="dec-6l-83L" customClass="PictureView">
                                 <rect key="frame" x="215" y="140" width="93" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai3_93_112.png" id="XTy-Bn-tKx" customClass="PictureView">
+                            <imageView tag="3" contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai3_93_112.png" id="XTy-Bn-tKx" customClass="PictureView">
                                 <rect key="frame" x="215" y="20" width="93" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai2_93_112.png" id="RrE-qT-Cso" customClass="PictureView">
+                            <imageView tag="2" contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai2_93_112.png" id="RrE-qT-Cso" customClass="PictureView">
                                 <rect key="frame" x="114" y="20" width="93" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai1_93_112.png" id="2ez-xr-nui" customClass="PictureView">
+                            <imageView tag="1" contentMode="scaleAspectFit" image="Mobile Makers Academy Official1_93x93.png" highlightedImage="panerai1_93_112.png" id="2ez-xr-nui" customClass="PictureView">
                                 <rect key="frame" x="13" y="20" width="93" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -116,6 +122,7 @@
                         <outlet property="oneOneCard" destination="2ez-xr-nui" id="gdh-sa-rbU"/>
                         <outlet property="oneThreeCard" destination="XTy-Bn-tKx" id="ZMp-5G-YYw"/>
                         <outlet property="oneTwoCard" destination="RrE-qT-Cso" id="Dww-l9-O2C"/>
+                        <outlet property="stopWatchLabel" destination="cHF-Uv-MKz" id="eR8-AH-fzM"/>
                         <outlet property="threeOneCard" destination="5Vb-Jq-w2s" id="QHL-Mf-qdZ"/>
                         <outlet property="threeThreeCard" destination="9wF-Hu-4kE" id="ozZ-kR-E0Y"/>
                         <outlet property="threeTwoCard" destination="w8q-2t-hRJ" id="CVj-zp-14b"/>
@@ -177,12 +184,15 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MMMainViewController.h"/>
             <relationships>
                 <relationship kind="action" name="changeMe:" candidateClass="UIButton"/>
+                <relationship kind="action" name="onStartPressed:"/>
+                <relationship kind="action" name="onStopPressed:"/>
                 <relationship kind="outlet" name="fourOneCard" candidateClass="PictureView"/>
                 <relationship kind="outlet" name="fourThreeCard" candidateClass="PictureView"/>
                 <relationship kind="outlet" name="fourTwoCard" candidateClass="PictureView"/>
                 <relationship kind="outlet" name="oneOneCard" candidateClass="PictureView"/>
                 <relationship kind="outlet" name="oneThreeCard" candidateClass="PictureView"/>
                 <relationship kind="outlet" name="oneTwoCard" candidateClass="PictureView"/>
+                <relationship kind="outlet" name="stopWatchLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="threeOneCard" candidateClass="PictureView"/>
                 <relationship kind="outlet" name="threeThreeCard" candidateClass="PictureView"/>
                 <relationship kind="outlet" name="threeTwoCard" candidateClass="PictureView"/>
