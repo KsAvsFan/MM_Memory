@@ -13,10 +13,11 @@
 
 @end
 
+
 @implementation MMMainViewController
 
-
-
+NSTimer *stopWatchTimer;
+NSTimeInterval secondsAlreadyRun;
 
 - (void)viewDidLoad
 {
@@ -36,70 +37,71 @@
 
 - (void) setCards
 {
-    oneOneCard.imageName = @"panerai1_93_112.png";
-    oneTwoCard.imageName = @"panerai2_93_112.png";
-    oneThreeCard.imageName = @"panerai3_93_112.png";
-    twoOneCard.imageName = @"panerai4_93_112.png";
-    twoTwoCard.imageName = @"panerai5_93_112.png";
-    twoThreeCard.imageName = @"flavor-flav.png";
-    threeOneCard.imageName = @"flavor-flav.png";
-    threeTwoCard.imageName = @"panerai5_93_112.png";
-    threeThreeCard.imageName = @"panerai4_93_112.png";
-    fourOneCard.imageName = @"panerai3_93_112.png";
-    fourTwoCard.imageName = @"panerai2_93_112.png";
-    fourThreeCard.imageName = @"panerai1_93_112.png";
+//    oneOneCard.imageName = @"panerai1_93_112.png";
+//    oneTwoCard.imageName = @"panerai2_93_112.png";
+//    oneThreeCard.imageName = @"panerai3_93_112.png";
+//    twoOneCard.imageName = @"panerai4_93_112.png";
+//    twoTwoCard.imageName = @"panerai5_93_112.png";
+//    twoThreeCard.imageName = @"flavor-flav.png";
+//    threeOneCard.imageName = @"flavor-flav.png";
+//    threeTwoCard.imageName = @"panerai5_93_112.png";
+//    threeThreeCard.imageName = @"panerai4_93_112.png";
+//    fourOneCard.imageName = @"panerai3_93_112.png";
+//    fourTwoCard.imageName = @"panerai2_93_112.png";
+//    fourThreeCard.imageName = @"panerai1_93_112.png";
 }
 
-//- (void) buttonPushed:(id)sender
+
+//-(IBAction)startClock:(UIButton*)myButton
 //{
-//	NSLog(@"It works!");
+//    
+//    startDate = [[NSDate date] retain];
+//    myButton.enabled  = false;
+//    secondTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/100.0 target:self selector:@selector(updateTimerSecond) userInfo:nil repeats:YES];
 //}
-
-
-//-(IBAction)changeMe:(UIButton*)button
-//{
-//    NSLog(@"Button Pushed");
-//    if (button.selected == NO)
-//    {
-//        [button setSelected:YES];
-//        [button setImage:[UIImage imageNamed:@"flavor-flav.png"] forState:UIControlStateSelected];
-//    }
-//    else
-//    {
-//        [button setSelected:NO];
-//        [button setImage:[UIImage imageNamed:@"Mobile Makers Academy Official1_93x93.png"] forState:UIControlStateSelected];
-//    }
-//}
-
 
 - (IBAction)onStartPressed:(id)sender
 {
-    stopWatchLabel.text = @"START PRESSED";
-    startDate = [[NSDate date]retain];
     
-    // Create the stop watch timer that fires every 10 ms
-    stopWatchTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/10.0
+    stopWatchTimer = [NSTimer scheduledTimerWithTimeInterval:1/10
                                                       target:self
-                                                    selector:@selector(updateTimer)
+                                                    selector:@selector(updateTimerSecond:)
                                                     userInfo:nil
                                                      repeats:YES];
+    startDate = [[NSDate alloc] init];
+    // equivalent to [[NSDate date] retain];
+    [stopWatchTimer fire];
 }
 
-
-- (IBAction)onStopPressed:(id)sender
-{
+- (IBAction)onStopPressed:(id)sender {
+    // _Increment_ secondsAlreadyRun to allow for multiple pauses and restarts
+    secondsAlreadyRun += [[NSDate date] timeIntervalSinceDate:startDate]; //need to setup secondsAlreadyRun
     [stopWatchTimer invalidate];
     stopWatchTimer = nil;
-    [self updateTimer];
+    [startDate release];
+    [self updateTimerSecond];
 }
 
-
-- (void)updateTimer
-{
-    static NSInteger counter = 0;
-    stopWatchLabel.text = [NSString stringWithFormat:@"Counter: %i", counter++];
-}
+-(void)updateTimerSecond:(NSTimer *)tim {
+    NSDate *currentDate = [NSDate date];
+    NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:startDate];
+    timeInterval += secondsAlreadyRun; //need to setup secondsAlreadyRun as a NSDate?
+    NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"mm:ss:SS"];
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
+    NSString *timeString = [dateFormatter stringFromDate:timerDate];
+    secondLabel.text = timeString;
+    [dateFormatter release];
     
+}
+
+- (IBAction)reset:(id)sender; {
+    secondsAlreadyRun = 0;
+    secondLabel.text = @"00:00.00";
+}
+
+
 
 #pragma mark - Flipside View
 

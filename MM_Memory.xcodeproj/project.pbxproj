@@ -19,16 +19,15 @@
 		1F30D0A5162FAEF200F05B6C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F30D0A3162FAEF200F05B6C /* MainStoryboard.storyboard */; };
 		1F30D0A8162FAEF200F05B6C /* MMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F30D0A7162FAEF200F05B6C /* MMMainViewController.m */; };
 		1F30D0AB162FAEF200F05B6C /* MMFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F30D0AA162FAEF200F05B6C /* MMFlipsideViewController.m */; };
-		1F30D0B3162FBA6F00F05B6C /* panerai1_93_112.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F30D0B2162FBA6F00F05B6C /* panerai1_93_112.png */; };
-		1F30D0B5162FBAFE00F05B6C /* panerai2_93_112.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F30D0B4162FBAFE00F05B6C /* panerai2_93_112.png */; };
-		1F30D0B7162FBBF700F05B6C /* panerai3_93_112.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F30D0B6162FBBF700F05B6C /* panerai3_93_112.png */; };
-		1F30D0B9162FBD0600F05B6C /* panerai4_93_112.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F30D0B8162FBD0600F05B6C /* panerai4_93_112.png */; };
-		1F30D0BB162FBE3900F05B6C /* panerai5_93_112.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F30D0BA162FBE3900F05B6C /* panerai5_93_112.png */; };
-		1F30D0BD162FBF8300F05B6C /* flavor-flav.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F30D0BC162FBF8300F05B6C /* flavor-flav.jpg */; };
 		1F30D0C0162FC0DB00F05B6C /* PictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F30D0BF162FC0DB00F05B6C /* PictureView.m */; };
-		1F30D0C2162FC36F00F05B6C /* mm_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F30D0C1162FC36F00F05B6C /* mm_logo.png */; };
-		1F30D0D016307E6300F05B6C /* Mobile Makers Academy Official1_93x93.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F30D0CF16307E6300F05B6C /* Mobile Makers Academy Official1_93x93.png */; };
-		1F30D0D2163092DF00F05B6C /* flavor-flav.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F30D0D1163092DF00F05B6C /* flavor-flav.png */; };
+		1F7CE9691633452C00F50239 /* flavor-flav.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F7CE9631633452C00F50239 /* flavor-flav.png */; };
+		1F7CE96A1633452C00F50239 /* panerai2_93_112.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F7CE9641633452C00F50239 /* panerai2_93_112.png */; };
+		1F7CE96B1633452C00F50239 /* panerai3_93_112.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F7CE9651633452C00F50239 /* panerai3_93_112.png */; };
+		1F7CE96C1633452C00F50239 /* panerai4_93_112.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F7CE9661633452C00F50239 /* panerai4_93_112.png */; };
+		1F7CE96D1633452C00F50239 /* panerai5_93_112.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F7CE9671633452C00F50239 /* panerai5_93_112.png */; };
+		1F7CE96E1633452C00F50239 /* panerai1_93_112.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F7CE9681633452C00F50239 /* panerai1_93_112.png */; };
+		1FABC96C163347EA00E5FC97 /* Mobile Makers Academy Official1_93x93.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FABC96B163347EA00E5FC97 /* Mobile Makers Academy Official1_93x93.png */; };
+		1FB4663316332664006E0179 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB4663216332664006E0179 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,17 +49,16 @@
 		1F30D0A7162FAEF200F05B6C /* MMMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMMainViewController.m; sourceTree = "<group>"; };
 		1F30D0A9162FAEF200F05B6C /* MMFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMFlipsideViewController.h; sourceTree = "<group>"; };
 		1F30D0AA162FAEF200F05B6C /* MMFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMFlipsideViewController.m; sourceTree = "<group>"; };
-		1F30D0B2162FBA6F00F05B6C /* panerai1_93_112.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panerai1_93_112.png; sourceTree = "<group>"; };
-		1F30D0B4162FBAFE00F05B6C /* panerai2_93_112.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panerai2_93_112.png; sourceTree = "<group>"; };
-		1F30D0B6162FBBF700F05B6C /* panerai3_93_112.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panerai3_93_112.png; sourceTree = "<group>"; };
-		1F30D0B8162FBD0600F05B6C /* panerai4_93_112.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panerai4_93_112.png; sourceTree = "<group>"; };
-		1F30D0BA162FBE3900F05B6C /* panerai5_93_112.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panerai5_93_112.png; sourceTree = "<group>"; };
-		1F30D0BC162FBF8300F05B6C /* flavor-flav.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "flavor-flav.jpg"; sourceTree = "<group>"; };
 		1F30D0BE162FC0DB00F05B6C /* PictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureView.h; sourceTree = "<group>"; };
 		1F30D0BF162FC0DB00F05B6C /* PictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureView.m; sourceTree = "<group>"; };
-		1F30D0C1162FC36F00F05B6C /* mm_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mm_logo.png; sourceTree = "<group>"; };
-		1F30D0CF16307E6300F05B6C /* Mobile Makers Academy Official1_93x93.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mobile Makers Academy Official1_93x93.png"; sourceTree = "<group>"; };
-		1F30D0D1163092DF00F05B6C /* flavor-flav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flavor-flav.png"; sourceTree = "<group>"; };
+		1F7CE9631633452C00F50239 /* flavor-flav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flavor-flav.png"; sourceTree = "<group>"; };
+		1F7CE9641633452C00F50239 /* panerai2_93_112.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panerai2_93_112.png; sourceTree = "<group>"; };
+		1F7CE9651633452C00F50239 /* panerai3_93_112.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panerai3_93_112.png; sourceTree = "<group>"; };
+		1F7CE9661633452C00F50239 /* panerai4_93_112.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panerai4_93_112.png; sourceTree = "<group>"; };
+		1F7CE9671633452C00F50239 /* panerai5_93_112.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panerai5_93_112.png; sourceTree = "<group>"; };
+		1F7CE9681633452C00F50239 /* panerai1_93_112.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panerai1_93_112.png; sourceTree = "<group>"; };
+		1FABC96B163347EA00E5FC97 /* Mobile Makers Academy Official1_93x93.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mobile Makers Academy Official1_93x93.png"; sourceTree = "<group>"; };
+		1FB4663216332664006E0179 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB4663316332664006E0179 /* AudioToolbox.framework in Frameworks */,
 				1F30D08C162FAEF100F05B6C /* UIKit.framework in Frameworks */,
 				1F30D08E162FAEF100F05B6C /* Foundation.framework in Frameworks */,
 				1F30D090162FAEF100F05B6C /* CoreGraphics.framework in Frameworks */,
@@ -80,6 +79,7 @@
 		1F30D07C162FAEF100F05B6C = {
 			isa = PBXGroup;
 			children = (
+				1FB4663216332664006E0179 /* AudioToolbox.framework */,
 				1F30D091162FAEF200F05B6C /* MM_Memory */,
 				1F30D08A162FAEF100F05B6C /* Frameworks */,
 				1F30D088162FAEF100F05B6C /* Products */,
@@ -109,9 +109,9 @@
 			children = (
 				1F30D09A162FAEF200F05B6C /* MMAppDelegate.h */,
 				1F30D09B162FAEF200F05B6C /* MMAppDelegate.m */,
-				1F30D0A3162FAEF200F05B6C /* MainStoryboard.storyboard */,
 				1F30D0BE162FC0DB00F05B6C /* PictureView.h */,
 				1F30D0BF162FC0DB00F05B6C /* PictureView.m */,
+				1F30D0A3162FAEF200F05B6C /* MainStoryboard.storyboard */,
 				1F30D0A6162FAEF200F05B6C /* MMMainViewController.h */,
 				1F30D0A7162FAEF200F05B6C /* MMMainViewController.m */,
 				1F30D0A9162FAEF200F05B6C /* MMFlipsideViewController.h */,
@@ -139,15 +139,13 @@
 		1F30D0B1162FBA5E00F05B6C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				1F30D0D1163092DF00F05B6C /* flavor-flav.png */,
-				1F30D0CF16307E6300F05B6C /* Mobile Makers Academy Official1_93x93.png */,
-				1F30D0C1162FC36F00F05B6C /* mm_logo.png */,
-				1F30D0BC162FBF8300F05B6C /* flavor-flav.jpg */,
-				1F30D0BA162FBE3900F05B6C /* panerai5_93_112.png */,
-				1F30D0B8162FBD0600F05B6C /* panerai4_93_112.png */,
-				1F30D0B6162FBBF700F05B6C /* panerai3_93_112.png */,
-				1F30D0B4162FBAFE00F05B6C /* panerai2_93_112.png */,
-				1F30D0B2162FBA6F00F05B6C /* panerai1_93_112.png */,
+				1FABC96B163347EA00E5FC97 /* Mobile Makers Academy Official1_93x93.png */,
+				1F7CE9631633452C00F50239 /* flavor-flav.png */,
+				1F7CE9641633452C00F50239 /* panerai2_93_112.png */,
+				1F7CE9651633452C00F50239 /* panerai3_93_112.png */,
+				1F7CE9661633452C00F50239 /* panerai4_93_112.png */,
+				1F7CE9671633452C00F50239 /* panerai5_93_112.png */,
+				1F7CE9681633452C00F50239 /* panerai1_93_112.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -209,15 +207,13 @@
 				1F30D0A0162FAEF200F05B6C /* Default@2x.png in Resources */,
 				1F30D0A2162FAEF200F05B6C /* Default-568h@2x.png in Resources */,
 				1F30D0A5162FAEF200F05B6C /* MainStoryboard.storyboard in Resources */,
-				1F30D0B3162FBA6F00F05B6C /* panerai1_93_112.png in Resources */,
-				1F30D0B5162FBAFE00F05B6C /* panerai2_93_112.png in Resources */,
-				1F30D0B7162FBBF700F05B6C /* panerai3_93_112.png in Resources */,
-				1F30D0B9162FBD0600F05B6C /* panerai4_93_112.png in Resources */,
-				1F30D0BB162FBE3900F05B6C /* panerai5_93_112.png in Resources */,
-				1F30D0BD162FBF8300F05B6C /* flavor-flav.jpg in Resources */,
-				1F30D0C2162FC36F00F05B6C /* mm_logo.png in Resources */,
-				1F30D0D016307E6300F05B6C /* Mobile Makers Academy Official1_93x93.png in Resources */,
-				1F30D0D2163092DF00F05B6C /* flavor-flav.png in Resources */,
+				1F7CE9691633452C00F50239 /* flavor-flav.png in Resources */,
+				1F7CE96A1633452C00F50239 /* panerai2_93_112.png in Resources */,
+				1F7CE96B1633452C00F50239 /* panerai3_93_112.png in Resources */,
+				1F7CE96C1633452C00F50239 /* panerai4_93_112.png in Resources */,
+				1F7CE96D1633452C00F50239 /* panerai5_93_112.png in Resources */,
+				1F7CE96E1633452C00F50239 /* panerai1_93_112.png in Resources */,
+				1FABC96C163347EA00E5FC97 /* Mobile Makers Academy Official1_93x93.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +309,7 @@
 				GCC_PREFIX_HEADER = "MM_Memory/MM_Memory-Prefix.pch";
 				INFOPLIST_FILE = "MM_Memory/MM_Memory-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -324,6 +321,7 @@
 				GCC_PREFIX_HEADER = "MM_Memory/MM_Memory-Prefix.pch";
 				INFOPLIST_FILE = "MM_Memory/MM_Memory-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -347,6 +345,7 @@
 				1F30D0B0162FAEF200F05B6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

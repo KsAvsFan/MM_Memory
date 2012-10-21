@@ -7,6 +7,7 @@
 //
 
 #import "PictureView.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @implementation PictureView
 
@@ -27,7 +28,6 @@ static PictureView *lastimage;
 
 -(void)flipCard
 {
-    // [(GameViewController*)self.delegate]; //delegate codes by TJ
     numberOfTouches++;
     [self setHighlighted:true];
     [self setUserInteractionEnabled:false];
@@ -44,13 +44,15 @@ static PictureView *lastimage;
             
             if (lastimage.tag == self.tag) {
                 numberOfMatches++;
-                
+//                matchesLabel.text = [NSString stringWithFormat:@"%i", numberOfMatches];
                 NSLog(@"number of touches is %i", numberOfTouches);
                 NSLog(@"they match");
             }
             else
             {
                 numberOfMisses++;
+                AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+                // missesLabel.text = [NSString stringWithFormat:@"%i", numberOfMisses];
                 NSLog(@"number of touches is %i", numberOfTouches);
                 NSLog(@"they don't match");
                 [NSTimer scheduledTimerWithTimeInterval:1.0
