@@ -60,9 +60,10 @@ NSTimeInterval secondsAlreadyRun;
 //    secondTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/100.0 target:self selector:@selector(updateTimerSecond) userInfo:nil repeats:YES];
 //}
 
-- (IBAction)onStartPressed:(id)sender
+- (IBAction)onStartPressed:(UIButton*)myButton
 {
-    
+    myButton.enabled = false;
+    stopButton.enabled = true;
     stopWatchTimer = [NSTimer scheduledTimerWithTimeInterval:1/10
                                                       target:self
                                                     selector:@selector(updateTimerSecond:)
@@ -73,16 +74,18 @@ NSTimeInterval secondsAlreadyRun;
     [stopWatchTimer fire];
 }
 
-- (IBAction)onStopPressed:(id)sender {
-    // _Increment_ secondsAlreadyRun to allow for multiple pauses and restarts
+- (IBAction)onStopPressed:(UIButton*)stopButton {
+    stopButton.enabled = true;
+    myButton.enabled = false;
     secondsAlreadyRun += [[NSDate date] timeIntervalSinceDate:startDate]; //need to setup secondsAlreadyRun
     [stopWatchTimer invalidate];
     stopWatchTimer = nil;
     [startDate release];
-    [self updateTimerSecond];
+    [self updateTimerSecond:(time)];
 }
 
--(void)updateTimerSecond:(NSTimer *)tim {
+
+-(void)updateTimerSecond:(NSTimer*)timer {
     NSDate *currentDate = [NSDate date];
     NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:startDate];
     timeInterval += secondsAlreadyRun; //need to setup secondsAlreadyRun as a NSDate?

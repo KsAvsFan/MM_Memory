@@ -40,8 +40,8 @@
 }
 
 
-//-(IBAction)startClock:(UIButton*)myButton;
-//-(IBAction)stopClock:(UIButton*)stopButton;
+-(IBAction)startClock:(UIButton*)myButton;
+-(IBAction)stopClock:(UIButton*)stopButton;
 
 
 
