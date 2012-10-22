@@ -8,6 +8,8 @@
 
 #import "MMAppDelegate.h"
 
+#import "IntroScreen.h"
+
 @implementation MMAppDelegate
 
 - (void)dealloc
@@ -19,6 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.viewController = [[[IntroScreen alloc] initWithNibName:@"MainStoryboard.storyboard" bundle:nil] autorelease];
     return YES;
 }
 							

@@ -12,37 +12,27 @@
 
 @interface MMMainViewController : UIViewController <MMFlipsideViewControllerDelegate>
 {
-//    IBOutlet    PictureView*    oneOneCard;
-//    IBOutlet    PictureView*    oneTwoCard;
-//    IBOutlet    PictureView*    oneThreeCard;
-//    IBOutlet    PictureView*    twoOneCard;
-//    IBOutlet    PictureView*    twoTwoCard;
-//    IBOutlet    PictureView*    twoThreeCard;
-//    IBOutlet    PictureView*    threeOneCard;
-//    IBOutlet    PictureView*    threeTwoCard;
-//    IBOutlet    PictureView*    threeThreeCard;
-//    IBOutlet    PictureView*    fourOneCard;
-//    IBOutlet    PictureView*    fourTwoCard;
-//    IBOutlet    PictureView*    fourThreeCard;
-
     IBOutlet    UILabel*        secondLabel;
     IBOutlet    UILabel*        missesLabel;
     IBOutlet    UILabel*        matchesLabel;
     
-    NSTimer *secondTimer;
+    NSTimer                     *secondTimer;
     
-    NSDate *startDateMain;
-    NSDate *startDate;
-    NSDate *pausedDate;
+    NSDate                      *startDateMain;
+    NSDate                      *startDate;
+    NSDate                      *pausedDate;
     
-    Boolean     isCounting;
+    Boolean                     isCounting;
+    
+    int                         winningScore;
 
 }
 
 
--(IBAction)startClock:(UIButton*)myButton;
--(IBAction)stopClock:(UIButton*)stopButton;
+//-(IBAction)startClock:(UIButton*)myButton;
+//-(IBAction)stopClock:(UIButton*)stopButton;
 
+-(void)startGame;
 
 
 @end

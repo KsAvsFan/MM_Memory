@@ -44,7 +44,6 @@ static PictureView *lastimage;
             
             if (lastimage.tag == self.tag) {
                 numberOfMatches++;
-//                matchesLabel.text = [NSString stringWithFormat:@"%i", numberOfMatches];
                 NSLog(@"number of touches is %i", numberOfTouches);
                 NSLog(@"they match");
             }
@@ -52,7 +51,6 @@ static PictureView *lastimage;
             {
                 numberOfMisses++;
                 AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-                // missesLabel.text = [NSString stringWithFormat:@"%i", numberOfMisses];
                 NSLog(@"number of touches is %i", numberOfTouches);
                 NSLog(@"they don't match");
                 [NSTimer scheduledTimerWithTimeInterval:1.0
