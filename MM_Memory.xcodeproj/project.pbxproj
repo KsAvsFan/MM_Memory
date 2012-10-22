@@ -35,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F0694141635F3DB00F62ACF /* MMDelegateFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMDelegateFile.h; sourceTree = "<group>"; };
 		1F30D087162FAEF100F05B6C /* MM_Memory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MM_Memory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F30D08B162FAEF100F05B6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F30D08D162FAEF100F05B6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -123,6 +124,7 @@
 				1F30D0BF162FC0DB00F05B6C /* PictureView.m */,
 				1F4278DF16357DC60065AB5E /* IntroScreen.h */,
 				1F4278E016357DC60065AB5E /* IntroScreen.m */,
+				1F0694141635F3DB00F62ACF /* MMDelegateFile.h */,
 				1F4278E116357DC60065AB5E /* IntroScreen.xib */,
 				1F30D0A3162FAEF200F05B6C /* MainStoryboard.storyboard */,
 				1F30D0A6162FAEF200F05B6C /* MMMainViewController.h */,

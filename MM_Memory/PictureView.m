@@ -13,6 +13,7 @@
 
 @synthesize imageName;
 @synthesize matched;
+@synthesize delegate = _delegate;
 
 static int numberOfTouches, numberOfMatches, numberOfMisses;
 static PictureView *lastimage;
@@ -44,12 +45,14 @@ static PictureView *lastimage;
             
             if (lastimage.tag == self.tag) {
                 numberOfMatches++;
+                [_delegate increaseMatches:(numberOfMatches)];
                 NSLog(@"number of touches is %i", numberOfTouches);
                 NSLog(@"they match");
             }
             else
             {
                 numberOfMisses++;
+                [_delegate increaseMisses:(numberOfMisses)];
                 AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
                 NSLog(@"number of touches is %i", numberOfTouches);
                 NSLog(@"they don't match");

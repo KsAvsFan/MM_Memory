@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MMDelegateFile.h"
 
 @interface PictureView : UIImageView
 {
@@ -16,6 +17,7 @@
 
 @property (nonatomic, retain) NSString *imageName;
 @property (nonatomic, assign, getter=isMatched) BOOL matched;
+@property(nonatomic, retain)id<MMDelegateFile> delegate;
 
 
 @end

@@ -7,10 +7,11 @@
 //
 
 #import "MMFlipsideViewController.h"
+#import "MMDelegateFile.h"
 
 @class PictureView;
 
-@interface MMMainViewController : UIViewController <MMFlipsideViewControllerDelegate>
+@interface MMMainViewController : UIViewController <MMFlipsideViewControllerDelegate> <MMDelegateFile>
 {
     IBOutlet    UILabel*        secondLabel;
     IBOutlet    UILabel*        missesLabel;
