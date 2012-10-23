@@ -13,4 +13,5 @@
 -(void)increaseMisses:(int)misses;
 
 -(void)increaseMatches:(int)matches;
+
 @end

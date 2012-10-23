@@ -11,7 +11,7 @@
 
 @class PictureView;
 
-@interface MMMainViewController : UIViewController <MMFlipsideViewControllerDelegate> <MMDelegateFile>
+@interface MMMainViewController : UIViewController <MMFlipsideViewControllerDelegate, MMDelegateFile>
 {
     IBOutlet    UILabel*        secondLabel;
     IBOutlet    UILabel*        missesLabel;
@@ -32,6 +32,8 @@
 
 //-(IBAction)startClock:(UIButton*)myButton;
 //-(IBAction)stopClock:(UIButton*)stopButton;
+
+
 
 -(void)startGame;
 

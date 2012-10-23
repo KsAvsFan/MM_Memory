@@ -46,7 +46,8 @@ static PictureView *lastimage;
             if (lastimage.tag == self.tag) {
                 numberOfMatches++;
                 [_delegate increaseMatches:(numberOfMatches)];
-                NSLog(@"number of touches is %i", numberOfTouches);
+                NSLog(@"number of matches is %i", numberOfMatches);
+                NSLog(@"number of misses is %i", numberOfMisses);
                 NSLog(@"they match");
             }
             else
@@ -54,7 +55,8 @@ static PictureView *lastimage;
                 numberOfMisses++;
                 [_delegate increaseMisses:(numberOfMisses)];
                 AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-                NSLog(@"number of touches is %i", numberOfTouches);
+                NSLog(@"number of matches is %i", numberOfMatches);
+                NSLog(@"number of misses is %i", numberOfMisses);
                 NSLog(@"they don't match");
                 [NSTimer scheduledTimerWithTimeInterval:1.0
                                                  target:self

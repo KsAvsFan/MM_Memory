@@ -104,4 +104,19 @@ int winningScore = 6;
     }
 }
 
+#pragma mark MMDelegateFile
+
+-(void)increaseMisses:(int)misses
+{
+    NSLog(@"misses = %i", misses);
+    missesLabel.text = [NSString stringWithFormat:@"%i", misses];
+    // do something
+}
+
+-(void)increaseMatches:(int)matches
+{
+    // do something
+    matchesLabel.text = [NSString stringWithFormat:@"%i", matches];
+}
+
 @end
